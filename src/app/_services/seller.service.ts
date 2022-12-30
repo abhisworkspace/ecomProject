@@ -1,15 +1,17 @@
-import { Injectable } from '@angular/core';
+import { Injectable, EventEmitter } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject } from 'rxjs';
 import { Router } from '@angular/router';
 import { Login, SignUp } from '../data-type/data-type';
-import bootstrap from 'bootstrap';
 
 @Injectable({
   providedIn: 'root',
 })
 export class SellerService {
   isSellerLoggedIn = new BehaviorSubject<boolean>(false);
+  isToastShow = false;
+  isLoginError = new EventEmitter<boolean>(false);
+  isLoginSuccess = new EventEmitter<boolean>(false);
 
   constructor(private http: HttpClient, private route: Router) {}
 
@@ -33,12 +35,12 @@ export class SellerService {
         console.log(result);
         if (result && result.body && result.body.length) {
           console.log('user logged in');
+          this.isLoginSuccess.emit(true);
           localStorage.setItem('seller', JSON.stringify(result.body));
           this.route.navigate(['seller-home']);
         } else {
           console.log('user logged Failed');
-          const toast = new bootstrap.Toast(toastLiveExample);
-          toast.show();
+          this.isLoginError.emit(true);
         }
       });
 

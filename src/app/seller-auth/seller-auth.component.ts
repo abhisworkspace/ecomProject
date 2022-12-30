@@ -9,7 +9,9 @@ import { SellerService } from '../_services/seller.service';
   styleUrls: ['./seller-auth.component.scss'],
 })
 export class SellerAuthComponent implements OnInit {
-  isLoginShow = true;
+  isLoginShow = false;
+  isErrorShow = false;
+  isSuccessShow = false;
 
   constructor(private seller: SellerService, private route: Router) {}
 
@@ -24,6 +26,20 @@ export class SellerAuthComponent implements OnInit {
   login(data: SignUp): void {
     console.log(data);
     this.seller.userLogin(data);
+
+    this.seller.isLoginError.subscribe((isErr) => {
+      console.log(isErr);
+      if (isErr) {
+        this.isErrorShow = true;
+      }
+    });
+
+    this.seller.isLoginSuccess.subscribe((isSuccess) => {
+      console.log(isSuccess);
+      if (isSuccess) {
+        this.isSuccessShow = true;
+      }
+    });
   }
 
   switchLoginSignup() {
