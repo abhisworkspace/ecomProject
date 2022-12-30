@@ -1,0 +1,40 @@
+{
+  "seller": [
+    {
+      "name": "Abhijit Daphale",
+      "email": "abhijitdaphale@gmail.com",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "name": "Priyanka Bhor",
+      "email": "priyanka@gmail.com",
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "name": "Yashasri",
+      "email": "yashasri@gmail.com",
+      "password": "123456",
+      "id": 3
+    },
+    {
+      "name": "Prajakta",
+      "email": "prajakta@test.com",
+      "password": "123456",
+      "id": 4
+    },
+    {
+      "name": "Suraj",
+      "email": "suraj@test.com",
+      "password": "123456",
+      "id": 5
+    },
+    {
+      "name": "Gaurav",
+      "email": "gaurav@test.com",
+      "password": "123456",
+      "id": 6
+    }
+  ]
+}

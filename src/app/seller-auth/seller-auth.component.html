@@ -1,0 +1,68 @@
+<div class="wrapper fadeInDown">
+    <div id="formContent" class="px-5 py-4">
+        <div class="fadeIn first my-4 text-center">
+            <img src="../../assets/images/logo.png" id="icon" alt="User Icon" style="width: 100px;">
+        </div>
+
+        <!-- Signup Form -->
+        <form #sellerSignup="ngForm" (ngSubmit)="signup(sellerSignup.value)" *ngIf="!isLoginShow">
+            <div class="mb-3 fadeIn second">
+                <label class="form-label">Name</label>
+                <input type="text" name="name" ngModel class="form-control" placeholder="Enter Full Name">
+            </div>
+
+            <div class="mb-3 fadeIn second">
+                <label class="form-label">Email</label>
+                <input type="email" name="email" ngModel class="form-control" placeholder="Enter email">
+            </div>
+
+            <div class="mb-3 fadeIn third">
+                <label class="form-label">Password</label>
+                <input type="password" name="password" ngModel class="form-control" placeholder="Enter password">
+            </div>
+            <div class="fadeIn fourth text-center">
+                <button class="btn btn-primary fadeIn fourth">Sign up</button>
+            </div>
+            <div class="fadeIn fourth text-center">
+                <p class="d-flex align-items-center justify-content-center ">Already have account?
+                    <a class="btn btn-link text-decoration-none" (click)="switchLoginSignup()">Login</a>
+                </p>
+            </div>
+        </form>
+
+        <!-- Signup Form -->
+        <form #sellerLogin="ngForm" (ngSubmit)="login(sellerLogin.value)" *ngIf="isLoginShow">
+            <div class="mb-3 fadeIn second">
+                <label class="form-label">Email</label>
+                <input type="email" name="email" ngModel class="form-control" placeholder="Enter email">
+            </div>
+
+            <div class="mb-3 fadeIn third">
+                <label class="form-label">Password</label>
+                <input type="password" name="password" ngModel class="form-control" placeholder="Enter password">
+            </div>
+            <div class="fadeIn fourth text-center">
+                <button class="btn btn-primary fadeIn fourth">Sign In</button>
+            </div>
+            <div class="fadeIn fourth text-center">
+                <p class="d-flex align-items-center justify-content-center">If you don't have an account?
+                    <a class="btn btn-link text-decoration-none" (click)="switchLoginSignup()">Signup</a>
+                </p>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <img src="..." class="rounded me-2" alt="...">
+            <strong class="me-auto">Bootstrap</strong>
+            <small>11 mins ago</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+            Hello, world! This is a toast message.
+        </div>
+    </div>
+</div>
