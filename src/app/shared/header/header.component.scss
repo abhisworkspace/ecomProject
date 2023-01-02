@@ -12,3 +12,14 @@
     padding: 3px;
   }
 }
+
+.nav {
+  li {
+    a.nav-link {
+      font-size: 14px;
+      &.active-link {
+        font-weight: 500;
+      }
+    }
+  }
+}

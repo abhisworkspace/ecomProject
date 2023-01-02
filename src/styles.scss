@@ -1,3 +1,5 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
 /* You can add global styles to this file, and also import other style files */
 
 /* ANIMATIONS */
@@ -101,4 +103,21 @@
   -webkit-animation-delay: 1s;
   -moz-animation-delay: 1s;
   animation-delay: 1s;
+}
+
+body {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.main-view {
+  padding-top: 50px;
+}
+.min-btn {
+  min-width: 120px;
+}
+.table > tbody > tr > td {
+  vertical-align: middle;
 }

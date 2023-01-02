@@ -35,17 +35,16 @@ export class SellerService {
         console.log(result);
         if (result && result.body && result.body.length) {
           console.log('user logged in');
-          this.isLoginSuccess.emit(true);
           localStorage.setItem('seller', JSON.stringify(result.body));
           this.route.navigate(['seller-home']);
+          this.isLoginSuccess.emit(true);
+          this.isLoginError.emit(false);
         } else {
           console.log('user logged Failed');
           this.isLoginError.emit(true);
+          this.isLoginSuccess.emit(false);
         }
       });
-
-    // return this.http
-    // .post()
   }
 
   reloadSeller() {

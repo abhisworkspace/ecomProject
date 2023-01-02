@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { SignUp } from '../data-type/data-type';
-import { SellerService } from '../_services/seller.service';
+import { SignUp } from '../../data-type/data-type';
+import { SellerService } from '../../_services/seller.service';
 
 @Component({
   selector: 'app-seller-auth',
@@ -35,7 +35,7 @@ export class SellerAuthComponent implements OnInit {
     });
 
     this.seller.isLoginSuccess.subscribe((isSuccess) => {
-      console.log(isSuccess);
+      console.log('isSuccess', isSuccess);
       if (isSuccess) {
         this.isSuccessShow = true;
       }

@@ -1,6 +1,7 @@
 <header class="bg-light p-3">
     <div class="container">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <div class="d-flex flex-wrap align-items-center justify-content-center "
+            [ngClass]="menuType == 'seller'?'justify-content-lg-between':'justify-content-lg-start'">
             <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
                 <img src="../../../assets/images/logo.png" alt="" style="height: 60px;" />
             </a>
@@ -10,7 +11,7 @@
                 <li><a href="#" class="nav-link px-2 link-dark">Products</a></li>
             </ul> -->
 
-            <form class="col-12 col-lg-auto mb-lg-0 mx-lg-auto" role="search">
+            <form class="col-12 col-lg-auto mb-lg-0 mx-lg-auto" role="search" *ngIf="menuType==='default'">
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="Search..." aria-label="Recipient's username"
                         aria-describedby="basic-addon2">
@@ -19,14 +20,40 @@
             </form>
 
 
-            <ul class="nav col-12 col-lg-auto justify-content-center mb-md-0">
-                <li><a routerLink="" class="nav-link px-2 link-secondary">Home</a></li>
-                <li><a routerLink="seller-auth" class="nav-link px-2 link-dark">Seller</a></li>
-                <li><a href="#" class="nav-link px-2 link-secondary cart-count">Cart <span
-                            class="badge bg-danger">12</span></a>
-                </li>
-                <li><a href="#" class="nav-link px-2 link-secondary">Login</a></li>
-            </ul>
+            <div [ngSwitch]="menuType" [ngClass]="menuType == 'seller'? 'ms-auto': 'me-0'">
+                <ul *ngSwitchCase="'default'" class="nav col-12 col-lg-auto justify-content-center mb-md-0 ms-auto">
+                    <li><a routerLink="" class="nav-link px-2 link-secondary">Home</a></li>
+                    <li><a routerLink="seller-auth" class="nav-link px-2 link-secondary">Seller</a></li>
+                    <li><a href="#" class="nav-link px-2 link-secondary cart-count">Cart
+                            <span class="badge bg-danger">12</span></a>
+                    </li>
+                    <li><a href="#" class="nav-link px-2 link-secondary">Login</a></li>
+                </ul>
+                <ul *ngSwitchCase="'seller'"
+                    class="nav col-12 col-lg-auto justify-content-center align-items-center mb-md-0 ms-auto">
+                    <li><a routerLink="seller-home" class="nav-link px-2 link-secondary">Product List</a></li>
+                    <li><a class="nav-link px-2 link-secondary" href="#" (click)="logout()">Sign out</a></li>
+                    <li class="d-flex align-items-center">
+                        <span class="me-3">{{sellerName | titlecase}}</span>
+                        <div class="dropdown text-end">
+                            <a href="#" (click)="$event.preventDefault()"
+                                class="text-decoration-none dropdown-toggle d-block text-small"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32"
+                                    class="rounded-circle">
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#" (click)="logout()">Sign out</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </header>

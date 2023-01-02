@@ -35,6 +35,41 @@
       "email": "gaurav@test.com",
       "password": "123456",
       "id": 6
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 7
+    }
+  ],
+  "products": [
+    {
+      "product_name": "Samsung S8+",
+      "product_price": 75000,
+      "product_color": "Blue",
+      "product_category": "Mobile",
+      "product_desc": "Samsung S8+ awesome mobile",
+      "product_image": "https://cdn.alloallo.media/catalog/product/samsung/galaxy-s/galaxy-s8-plus/galaxy-s8-plus-midnight-black.jpg",
+      "id": 1
+    },
+    {
+      "product_name": "Lenovo IdeaPad",
+      "product_price": "60000",
+      "product_color": "Silver",
+      "product_category": "Laptop",
+      "product_desc": "Lenovo 8gbRam/500gbHDD/128gbSSD",
+      "product_image": "https://m.media-amazon.com/images/I/71w0hh-Q4aL._SL1500_.jpg",
+      "id": 2
+    },
+    {
+      "product_name": "OMEN by HP Laptop 17-ck1022TX",
+      "product_price": "216,499",
+      "product_color": "Shadow black",
+      "product_category": "Laptop",
+      "product_desc": "12th Generation Intel® Core™ i7 processor\nWindows 11 Home\n43.9 cm (17.3) diagonal QHD display 165 Hz 3 ms response time\nNVIDIA® GeForce RTX™ 3070 Ti\n32 GB DDR5-4800 MHz RAM\n1 TB PCIe® NVMe™ SSD generation 4\n2.78 kg\nRGB 4 zone Anti-ghosting KBD",
+      "product_image": "https://in-media.apjonlinecdn.com/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/6/J/6J0W2PA-1_T1659920756.png",
+      "id": 3
     }
   ]
 }
