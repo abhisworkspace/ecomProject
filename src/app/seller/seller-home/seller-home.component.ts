@@ -26,6 +26,14 @@ export class SellerHomeComponent implements OnInit {
     });
   }
 
+  editProduct(id: number) {
+    // this.productService.editProduct(id).subscribe((result) => {
+    //   if (result) {
+    //     console.log(result);
+    //   }
+    // });
+  }
+
   deleteProduct(id: number) {
     this.productService.deleteProduct(id).subscribe((result) => {
       console.log(result);

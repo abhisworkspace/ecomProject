@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { SellerHomeComponent } from './seller/seller-home/seller-home.component';
 import { SellerAddProductComponent } from './seller/seller-add-product/seller-add-product.component';
+import { SellerUpdateProductComponent } from './seller/seller-update-product/seller-update-product.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { SellerAddProductComponent } from './seller/seller-add-product/seller-ad
     SellerAuthComponent,
     SellerHomeComponent,
     SellerAddProductComponent,
+    SellerUpdateProductComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],

@@ -8,18 +8,28 @@ import { Product } from '../data-type/data-type';
 export class ProductService {
   constructor(private http: HttpClient) {}
 
-  addProduct(data: Product) {
-    return this.http.post(`http://localhost:3000/products`, data);
-  }
-
   getAllProducts() {
     return this.http.get<Product[]>(`http://localhost:3000/products`);
   }
 
-  deleteProduct(id: number) {
-    console.log('service called');
-    console.log('id : ', id);
+  getProduct(id: string) {
+    return this.http.get<Product>(`http://localhost:3000/products/${id}`);
+  }
 
+  addProduct(data: Product) {
+    return this.http.post(`http://localhost:3000/products`, data);
+  }
+
+  editProduct(data: Product) {
+    console.log(data);
+
+    return this.http.put<Product>(
+      `http://localhost:3000/products/${data.id}`,
+      data
+    );
+  }
+
+  deleteProduct(id: number) {
     return this.http.delete(`http://localhost:3000/products/${id}`);
   }
 }

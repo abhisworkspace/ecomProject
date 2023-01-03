@@ -29,7 +29,8 @@
                 <tbody>
                     <tr *ngFor="let item of productList; let i = index; ">
                         <td>{{i + 1}}</td>
-                        <td><img [src]="item.product_image" class="card-img-top" alt="{{item.product_name}}"></td>
+                        <td class="text-center"><img [src]="item.product_image" class="card-img-top"
+                                alt="{{item.product_name}}"></td>
                         <td>{{item.product_name}}</td>
                         <td>{{item.product_price}}</td>
                         <td>{{item.product_color}}</td>
@@ -38,9 +39,9 @@
                         <td>
                             <ul class="list-inline mb-0">
                                 <li class="list-inline-item">
-                                    <button class="btn btn-primary btn-sm" data-bs-toggle="tooltip"
-                                        data-bs-placement="top" data-bs-title="Edit"><i
-                                            class="las la-pencil-alt"></i></button>
+                                    <a routerLink="/seller-updated-product/{{item.id}}" class="btn btn-primary btn-sm"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Edit"
+                                        (click)="editProduct(item.id)"><i class="las la-pencil-alt"></i></a>
                                 </li>
                                 <li class="list-inline-item">
                                     <button class="btn btn-danger btn-sm" data-bs-toggle="tooltip"

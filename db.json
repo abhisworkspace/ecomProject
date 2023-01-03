@@ -70,6 +70,15 @@
       "product_desc": "12th Generation Intel® Core™ i7 processor\nWindows 11 Home\n43.9 cm (17.3) diagonal QHD display 165 Hz 3 ms response time\nNVIDIA® GeForce RTX™ 3070 Ti\n32 GB DDR5-4800 MHz RAM\n1 TB PCIe® NVMe™ SSD generation 4\n2.78 kg\nRGB 4 zone Anti-ghosting KBD",
       "product_image": "https://in-media.apjonlinecdn.com/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/6/J/6J0W2PA-1_T1659920756.png",
       "id": 3
+    },
+    {
+      "product_name": "Lenovo IdeaPad @Latest",
+      "product_price": "80000",
+      "product_color": "Gold",
+      "product_category": "Laptop",
+      "product_desc": "Lenovo 8gbRam/500gbHDD/128gbSSD",
+      "product_image": "https://m.media-amazon.com/images/I/71w0hh-Q4aL._SL1500_.jpg",
+      "id": 4
     }
   ]
 }
