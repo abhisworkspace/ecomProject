@@ -113,7 +113,7 @@ body {
 }
 
 .main-view {
-  padding-top: 50px;
+  padding-top: 122px;
 }
 .min-btn {
   min-width: 120px;
@@ -124,4 +124,15 @@ body {
 
 .form-control {
   font-size: 12px;
+}
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+.color-picker {
+  outline: none;
+  border: 1px solid #ced4da;
+  padding: 0;
+  border-radius: 0.375rem;
+  width: 100%;
 }

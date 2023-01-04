@@ -11,6 +11,9 @@ import { SellerHomeComponent } from './seller/seller-home/seller-home.component'
 import { SellerAddProductComponent } from './seller/seller-add-product/seller-add-product.component';
 import { SellerUpdateProductComponent } from './seller/seller-update-product/seller-update-product.component';
 
+//ng-bootstrap
+import { NgbCarouselModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +24,14 @@ import { SellerUpdateProductComponent } from './seller/seller-update-product/sel
     SellerAddProductComponent,
     SellerUpdateProductComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    NgbCarouselModule,
+    NgbModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

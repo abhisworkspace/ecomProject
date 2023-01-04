@@ -21,8 +21,6 @@ export class ProductService {
   }
 
   editProduct(data: Product) {
-    console.log(data);
-
     return this.http.put<Product>(
       `http://localhost:3000/products/${data.id}`,
       data
@@ -31,5 +29,9 @@ export class ProductService {
 
   deleteProduct(id: number) {
     return this.http.delete(`http://localhost:3000/products/${id}`);
+  }
+
+  popularProducts() {
+    return this.http.get<Product[]>(`http://localhost:3000/products?_limit=3`);
   }
 }

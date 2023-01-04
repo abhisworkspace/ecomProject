@@ -47,25 +47,25 @@
     {
       "product_name": "Samsung S8+",
       "product_price": 75000,
-      "product_color": "Blue",
+      "product_color": "#2991FE",
       "product_category": "Mobile",
       "product_desc": "Samsung S8+ awesome mobile",
-      "product_image": "https://cdn.alloallo.media/catalog/product/samsung/galaxy-s/galaxy-s8-plus/galaxy-s8-plus-midnight-black.jpg",
+      "product_image": "https://www.pngall.com/wp-content/uploads/1/Mobile-PNG-Image.png",
       "id": 1
     },
     {
       "product_name": "Lenovo IdeaPad",
       "product_price": "60000",
-      "product_color": "Silver",
+      "product_color": "#5E5E5E",
       "product_category": "Laptop",
       "product_desc": "Lenovo 8gbRam/500gbHDD/128gbSSD",
-      "product_image": "https://m.media-amazon.com/images/I/71w0hh-Q4aL._SL1500_.jpg",
+      "product_image": "https://www.lenovo.com/medias/?context=bWFzdGVyfHJvb3R8NTcyODg4fGltYWdlL3BuZ3xoMjUvaGI4LzE0Mzg3NTEzNjg4MDk0LnBuZ3xkZGFiMDRiN2ViMjc2NGZjZTlmNzQ1YzUxY2Q3MTQ4ZTIzODA4NjE3YmI0YmE3Mjk2MWU5NzY4MTNjMjkwZjVl",
       "id": 2
     },
     {
       "product_name": "OMEN by HP Laptop 17-ck1022TX",
       "product_price": "216,499",
-      "product_color": "Shadow black",
+      "product_color": "#1F2323",
       "product_category": "Laptop",
       "product_desc": "12th Generation Intel® Core™ i7 processor\nWindows 11 Home\n43.9 cm (17.3) diagonal QHD display 165 Hz 3 ms response time\nNVIDIA® GeForce RTX™ 3070 Ti\n32 GB DDR5-4800 MHz RAM\n1 TB PCIe® NVMe™ SSD generation 4\n2.78 kg\nRGB 4 zone Anti-ghosting KBD",
       "product_image": "https://in-media.apjonlinecdn.com/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/6/J/6J0W2PA-1_T1659920756.png",
@@ -75,10 +75,19 @@
       "product_name": "Lenovo IdeaPad @Latest",
       "product_price": "80000",
       "product_color": "Gold",
-      "product_category": "Laptop",
+      "product_category": "#ffc3c9",
       "product_desc": "Lenovo 8gbRam/500gbHDD/128gbSSD",
       "product_image": "https://m.media-amazon.com/images/I/71w0hh-Q4aL._SL1500_.jpg",
       "id": 4
+    },
+    {
+      "product_name": "HP Laptop 15s-eq2182AU",
+      "product_price": "57,999",
+      "product_color": "#ebebeb",
+      "product_category": "Laptop",
+      "product_desc": "AMD Ryzen™ 5 processor\nWindows 11 Home\n39.6 cm (15.6) diagonal FHD display\nAMD Radeon™ Graphics\n512 GB PCIe® NVMe™ M.2 SSD\n16 GB DDR4-3200 MHz RAM (2 x 8 GB)",
+      "product_image": "https://in-media.apjonlinecdn.com/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/6/K/6K7U2PA-1_T1657702761.png",
+      "id": 5
     }
   ]
 }

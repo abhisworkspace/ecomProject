@@ -3,7 +3,7 @@
         <div class="col-sm-12">
             <a routerLink="/seller-add-product" class="btn btn-primary btn-sm float-end mb-3" data-bs-toggle="tooltip"
                 data-bs-placement="top" data-bs-title="Remove">Add product</a>
-            <table class="table table-bordered table-striped table-hover">
+            <table class="table table-bordered table-hover">
                 <colgroup>
                     <col style="width: 3% !important;">
                     <col style="width: 7% !important;">
@@ -33,7 +33,9 @@
                                 alt="{{item.product_name}}"></td>
                         <td>{{item.product_name}}</td>
                         <td>{{item.product_price}}</td>
-                        <td>{{item.product_color}}</td>
+                        <td>
+                            <span class="badge shadow-sm" [ngStyle]="{'background-color': item.product_color}"></span>
+                        </td>
                         <td>{{item.product_category}}</td>
                         <td>{{item.product_desc}}</td>
                         <td>
