@@ -13,6 +13,7 @@ import { SellerUpdateProductComponent } from './seller/seller-update-product/sel
 
 //ng-bootstrap
 import { NgbCarouselModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SearchListComponent } from './search-list/search-list.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { NgbCarouselModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
     SellerHomeComponent,
     SellerAddProductComponent,
     SellerUpdateProductComponent,
+    SearchListComponent,
   ],
   imports: [
     BrowserModule,

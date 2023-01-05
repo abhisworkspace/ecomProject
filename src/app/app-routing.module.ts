@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { SearchListComponent } from './search-list/search-list.component';
 import { SellerAddProductComponent } from './seller/seller-add-product/seller-add-product.component';
 import { SellerAuthComponent } from './seller/seller-auth/seller-auth.component';
 import { SellerHomeComponent } from './seller/seller-home/seller-home.component';
@@ -30,6 +31,10 @@ const routes: Routes = [
     path: 'seller-updated-product/:id',
     component: SellerUpdateProductComponent,
     canActivate: [AuthGuard],
+  },
+  {
+    path: 'searchList/:query',
+    component: SearchListComponent,
   },
 ];
 

@@ -12,11 +12,24 @@
                 <li><a href="#" class="nav-link px-2 link-dark">Products</a></li>
             </ul> -->
 
-            <form class="col-12 col-lg-auto mb-lg-0 mx-lg-auto" role="search" *ngIf="menuType==='default'">
+            <form class="col-12 col-lg-auto mb-lg-0 mx-lg-auto position-relative w-50" role="search"
+                *ngIf="menuType==='default'">
                 <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search..." aria-label="Recipient's username"
-                        aria-describedby="basic-addon2">
-                    <button class="input-group-text" id="basic-addon2">Search</button>
+                    <input #searchInput type="text" class="form-control" placeholder="Search..."
+                        (keyup)="searchProduct($event)" (blur)="hideSearch()">
+                    <button class="input-group-text" id="basic-addon2"
+                        (click)="submitSearch(searchInput.value)">Search</button>
+                    <!-- (keydown)="submitSearch(searchInput.value)" -->
+                </div>
+                <div class="dropdown-menu w-100" [ngClass]="{'show':searchResult}">
+                    <ul class="list-unstyled mb-0">
+                        <li *ngFor="let item of searchResult;">
+                            <a class="dropdown-item">{{item.product_name}}</a>
+                        </li>
+                        <li *ngIf="searchResult?.length == 0;">
+                            <a class="dropdown-item">No record found.</a>
+                        </li>
+                    </ul>
                 </div>
             </form>
 

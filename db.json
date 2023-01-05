@@ -74,10 +74,10 @@
     {
       "product_name": "Lenovo IdeaPad @Latest",
       "product_price": "80000",
-      "product_color": "Gold",
-      "product_category": "#ffc3c9",
+      "product_color": "#ffc3c9",
+      "product_category": "Laptop",
       "product_desc": "Lenovo 8gbRam/500gbHDD/128gbSSD",
-      "product_image": "https://m.media-amazon.com/images/I/71w0hh-Q4aL._SL1500_.jpg",
+      "product_image": "https://www.lenovo.com/medias/lenovo-laptops-ideapad-5-15in-intel-hero.png?context=bWFzdGVyfHJvb3R8MjQ1MzM5fGltYWdlL3BuZ3xoMDMvaDZmLzE0MTkxNjE1NDQyOTc0LnBuZ3wwZmM1N2FhMWMwODkxYTIwNjRkMWI2NDNlM2RjMjNiM2VlNGZiZGE4NmUzYWQxOTQ1OWY3N2YxN2M1MGM5NDYz",
       "id": 4
     },
     {
@@ -88,6 +88,15 @@
       "product_desc": "AMD Ryzen™ 5 processor\nWindows 11 Home\n39.6 cm (15.6) diagonal FHD display\nAMD Radeon™ Graphics\n512 GB PCIe® NVMe™ M.2 SSD\n16 GB DDR4-3200 MHz RAM (2 x 8 GB)",
       "product_image": "https://in-media.apjonlinecdn.com/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/6/K/6K7U2PA-1_T1657702761.png",
       "id": 5
+    },
+    {
+      "product_name": "DLP_test_1",
+      "product_price": "45000",
+      "product_color": "#ff0000",
+      "product_category": "Headphones",
+      "product_desc": "Test",
+      "product_image": "https://pngimg.com/uploads/headphones/headphones_PNG7640.png",
+      "id": 6
     }
   ]
 }

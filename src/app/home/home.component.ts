@@ -12,7 +12,7 @@ import { ProductService } from '../_services/product.service';
 export class HomeComponent implements OnInit {
   carouselData: undefined | Product[];
   isWished = false;
-  allProductData: undefined | Product[];
+  trendyProductsData: undefined | Product[];
 
   constructor(
     carouselConfig: NgbCarouselConfig,
@@ -28,9 +28,9 @@ export class HomeComponent implements OnInit {
       this.carouselData = result;
     });
 
-    this.productService.getAllProducts().subscribe((result) => {
+    this.productService.trendyProducts().subscribe((result) => {
       if (result) {
-        this.allProductData = result;
+        this.trendyProductsData = result;
       }
     });
   }
