@@ -35,13 +35,13 @@ export class SellerHomeComponent implements OnInit {
   }
 
   deleteProduct(id: number) {
-    this.productService.deleteProduct(id).subscribe((result) => {
-      console.log(result);
-      if (result) {
-        this.productDeleteMessage = true;
-        this.getAllProductList();
-      }
-      setTimeout(() => (this.productDeleteMessage = false), 3000);
-    });
+    // this.productService.deleteProduct(id).subscribe((result) => {
+    //   console.log(result);
+    //   if (result) {
+    //     this.productDeleteMessage = true;
+    //     this.getAllProductList();
+    //   }
+    //   setTimeout(() => (this.productDeleteMessage = false), 3000);
+    // });
   }
 }

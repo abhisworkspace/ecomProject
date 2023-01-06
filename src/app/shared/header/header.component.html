@@ -46,24 +46,20 @@
                 <ul *ngSwitchCase="'seller'"
                     class="nav col-12 col-lg-auto justify-content-center align-items-center mb-md-0 ms-auto">
                     <li><a routerLink="seller-home" class="nav-link px-2 link-secondary">Product List</a></li>
-                    <li><a class="nav-link px-2 link-secondary" href="#" (click)="logout()">Sign out</a></li>
                     <li class="d-flex align-items-center">
-                        <span class="me-3">{{sellerName | titlecase}}</span>
-                        <div class="dropdown text-end">
-                            <a href="#" (click)="$event.preventDefault()"
-                                class="text-decoration-none dropdown-toggle d-block text-small"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                        <div ngbDropdown class="dropdown d-inline-block">
+                            <button type="button"
+                                class="text-decoration-none dropdown-toggle d-flex align-items-center bg-light text-small border-0"
+                                id="dropdownBasic1" ngbDropdownToggle>
+                                <span>{{sellerName | titlecase}}</span>
                                 <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32"
-                                    class="rounded-circle">
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Settings</a></li>
-                                <li><a class="dropdown-item" href="#">Profile</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#" (click)="logout()">Sign out</a></li>
-                            </ul>
+                                    class="rounded-circle ms-2">
+                            </button>
+                            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                <button ngbDropdownItem>Settings</button>
+                                <button ngbDropdownItem>Profile</button>
+                                <button ngbDropdownItem (click)="logout()">Sign out</button>
+                            </div>
                         </div>
                     </li>
                 </ul>

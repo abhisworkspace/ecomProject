@@ -54,15 +54,6 @@
       "id": 1
     },
     {
-      "product_name": "Lenovo IdeaPad",
-      "product_price": "60000",
-      "product_color": "#5E5E5E",
-      "product_category": "Laptop",
-      "product_desc": "Lenovo 8gbRam/500gbHDD/128gbSSD",
-      "product_image": "https://www.lenovo.com/medias/?context=bWFzdGVyfHJvb3R8NTcyODg4fGltYWdlL3BuZ3xoMjUvaGI4LzE0Mzg3NTEzNjg4MDk0LnBuZ3xkZGFiMDRiN2ViMjc2NGZjZTlmNzQ1YzUxY2Q3MTQ4ZTIzODA4NjE3YmI0YmE3Mjk2MWU5NzY4MTNjMjkwZjVl",
-      "id": 2
-    },
-    {
       "product_name": "OMEN by HP Laptop 17-ck1022TX",
       "product_price": "216,499",
       "product_color": "#1F2323",

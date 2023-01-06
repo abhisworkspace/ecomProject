@@ -41,12 +41,13 @@
                         <td>
                             <ul class="list-inline mb-0">
                                 <li class="list-inline-item">
-                                    <a routerLink="/seller-updated-product/{{item.id}}" class="btn btn-primary btn-sm"
-                                        data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Edit"
-                                        (click)="editProduct(item.id)"><i class="las la-pencil-alt"></i></a>
+                                    <a routerLink="/seller-updated-product/{{item.id}}"
+                                        class="btn btn-outline-primary btn-sm" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" data-bs-title="Edit" (click)="editProduct(item.id)"><i
+                                            class="las la-pencil-alt"></i></a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <button class="btn btn-danger btn-sm" data-bs-toggle="tooltip"
+                                    <button class="btn btn-outline-danger btn-sm" data-bs-toggle="tooltip"
                                         data-bs-placement="top" data-bs-title="Remove"><i class="las la-trash-alt"
                                             (click)="deleteProduct(item.id)"></i></button>
                                 </li>
